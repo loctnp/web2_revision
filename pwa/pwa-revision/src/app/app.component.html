@@ -1,0 +1,21 @@
+<h2 class="text-center bg-dark text-light p-2">Progressive web app</h2>
+<div class="container-fluid">
+  <h5>Update: {{update}}</h5>
+  <h5 class="text-danger" *ngIf="errMsg">An error has occured when loading data</h5>
+  <table class="table table-hover">
+    <thead>
+      <th>#</th>
+      <th>Street Address</th>
+      <th>Street Name</th>
+      <th>City</th>
+    </thead>
+    <tbody>
+      <tr >
+        <td>{{p.id}}</td>
+        <td>{{p.street_address}}</td>
+        <td>{{p.street_name}}</td>
+        <td>{{p.city}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
